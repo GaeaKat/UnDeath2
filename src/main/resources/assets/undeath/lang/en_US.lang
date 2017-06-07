@@ -1,0 +1,20 @@
+undeath.zombieSpawn=Mode: Zombie
+undeath.skellSpawn=Mode: Skelleton
+undeath.pigZombieSpawn=Mode: Zombie Pigman
+undeath.slimeSpawn=Mode: Slime
+
+item.undeadSpawner.name=Corrupted Player Spawner
+
+undeath.config.title=Undeath Configs
+undeath.general.zombieChance=Zombie Chance
+undeath.general.zombieChance.tooltip=Chance of a zombie being spawned on death by zombie
+undeath.general.skeletonChance=Skelleton Chance
+undeath.general.skeletonChance.tooltip=Chance of a skelleton being spawned on death by skelleton
+undeath.general.zombiePigmanChance=Zombie Pigman Chance
+undeath.general.zombiePigmanChance.tooltip=Chance of a zombie pigman being spawned on death by zombie pigman
+entity.undeath.playerZombie.name=Player Zombie
+entity.undeath.playerSkell.name=Player Skelleton
+entity.undeath.playerPig.name=Player Pig Zombie
+entity.undeath.playerSlime.name=Slime
+undeath.waila.mode=Undead Monster: %s
+undeath.waila.player=Dead Player: %s

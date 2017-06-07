@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "undeath",
+    "name": "Undeath",
+    "description": "Adds zombiefied player characters on death",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "nekosune"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": [ ]
+  }
+]
