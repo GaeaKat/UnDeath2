@@ -1,9 +1,9 @@
 package com.nekokittygames.undeath.common.compat;
 
 import com.nekokittygames.undeath.common.IUndeadEntity;
-import mcp.mobius.waila.api.IWailaConfigHandler;
-import mcp.mobius.waila.api.IWailaEntityAccessor;
-import mcp.mobius.waila.api.IWailaEntityProvider;
+//import mcp.mobius.waila.api.IWailaConfigHandler;
+//import mcp.mobius.waila.api.IWailaEntityAccessor;
+//import mcp.mobius.waila.api.IWailaEntityProvider;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -18,7 +18,6 @@ import java.util.List;
 
 /**
  * Created by katsw on 31/05/2017.
- */
 
 public class WailaHUD implements IWailaEntityProvider {
     @Nullable
@@ -61,3 +60,4 @@ public class WailaHUD implements IWailaEntityProvider {
 
 
 }
+ */

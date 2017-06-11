@@ -6,6 +6,7 @@ import com.nekokittygames.undeath.common.entities.EntityPlayerZombie;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.*;
 import net.minecraft.entity.player.EntityPlayer;
@@ -23,6 +24,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -120,20 +122,19 @@ public class ItemSpawnUndead extends Item {
     }
 
     @Override
-    @SideOnly(Side.CLIENT)
-    public void getSubItems(Item itemIn, CreativeTabs tab, NonNullList<ItemStack> subItems) {
-        //super.getSubItems(itemIn, tab, subItems);
-        subItems.add(new ItemStack(this,1,0));
-        subItems.add(new ItemStack(this,1,1));
-        subItems.add(new ItemStack(this,1,2));
+    public void getSubItems(CreativeTabs itemIn, NonNullList<ItemStack> tab) {
+        super.getSubItems(itemIn, tab);
+        tab.add(new ItemStack(this,1,0));
+        tab.add(new ItemStack(this,1,1));
+        tab.add(new ItemStack(this,1,2));
         if(Config.deathChest)
-            subItems.add(new ItemStack(this,1,3));
-
+            tab.add(new ItemStack(this,1,3));
     }
+
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
+    public void addInformation(ItemStack stack, @Nullable World playerIn, List<String> tooltip, ITooltipFlag advanced) {
         super.addInformation(stack, playerIn, tooltip, advanced);
         switch (stack.getItemDamage())
         {
@@ -151,4 +152,5 @@ public class ItemSpawnUndead extends Item {
                 break;
         }
     }
+
 }
